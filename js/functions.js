@@ -41,3 +41,19 @@ function fetchTeamData(){
     teamMembers.push(teamWayne, teamWalter, teamAngelaL, teamScott, teamBarbara, teamAngelaC);
     return teamMembers
 }
+
+/**
+ * Crea profilo per ogni membro del team
+ * @param arrayTeam array con oggetti dei membri del team
+ */
+function createMemberProfile(arrayTeam){
+
+    for (let i in arrayTeam){
+
+        const staffMember = document.createElement("li");
+        const staffPic = document.createElement("img");
+        staffPic.src = `../img/${arrayTeam[i].photo}`;
+        staffMember.innerText = (`Membro staff: ${arrayTeam[i].name}, ${arrayTeam[i].role}`);
+        staffMembersHtml.append(staffMember, staffPic);
+    }
+}
