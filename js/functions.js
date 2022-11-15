@@ -1,5 +1,5 @@
 /**
- * Prende i dati del team dall'Html
+ * Prende i dati del team dall'Html (da fare meglio)
  * @return {Array} restituisce array di cui ogni membro è un oggetto
  */
 function fetchTeamData(){
